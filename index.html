@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		<!--
+		//
+		1)Создать коробку, разделить 10 на 10, добавить бордеры 
+
+		2)1 корабль на 4 клетки - Название класса:four; кол-во дивов с таким классом - 4
+		2 корабля на 3 клетки - Название класса:three; кол-во дивов с таким классом - 6
+		3 корабля на 2 клетки - Название класса:two; кол-во дивов с таким классом - 6
+		4 корабля на 1 клетку - Название класса:one; кол-во дивов с таким классом - 4
+
+		3)Обозначит крестиком при нажатии на поле в котором не было корабля
+		
+		4)Будут переменные с кол-вом попаданий и каких кораблей
+
+		5)Открывается див с крестиком
+
+		6)Бабаха, добавляется 1 очко при попадании по какому либо кораблю, если это корабль на 4 клетки, то очков добавляется 4
+
+		7)if score == 20{alert("ты побеждитель")};
+		//
+		-->
+	</title>
+</head>
+<style type="text/css">
+	.line1{
+		border:2px solid black;
+		height:100px;
+		width:100px;
+		background-color:red;
+	}
+	.line2{
+		border:2px solid black;
+		height:100px;
+		width:100px;
+		background-color:red;
+	}
+	.line3{
+		border:2px solid black;
+		height:100px;
+		width:100px;
+		background-color:red;
+	}
+	.line4{
+		border:2px solid black;
+		height:100px;
+		width:100px;
+		background-color:red;
+	}
+	.line4{
+		border:2px solid black;
+		height:100px;
+		width:100px;
+		background-color:red;
+	}
+	.line5{
+		border:2px solid black;
+		height:100px;
+		width:100px;
+		background-color:red;
+	}
+	.line6{
+		border:2px solid black;
+		height:100px;
+		width:100px;
+		background-color:red;
+	}
+	.line7{
+		border:2px solid black;
+		height:100px;
+		width:100px;
+		background-color:red;
+	}
+	.line8{
+		border:2px solid black;
+		height:100px;
+		width:100px;
+		background-color:red;
+	}
+	.line9{
+		border:2px solid black;
+		height:100px;
+		width:100px;
+		background-color:red;
+	}
+	.line10{
+		border:2px solid black;
+		height:100px;
+		width:100px;
+		background-color:red;
+	}
+	.miss{
+		background-image: url(missed.png);
+		background-size: 100% 100%;
+	}
+	.four{
+		background-color:purple;
+	}
+	.three{
+		background-color:orange;
+	}
+	.two{
+		background-color:green;
+	}
+	.one{
+		background-color:blue;
+	}
+	.flex{
+		display: flex;
+	}
+	.bukvi{
+		position: absolute;
+		color:white;
+	}
+</style>
+<body class="all">
+<div>
+	<div>
+	<h1>Ваше количество очков:</h1><h1 class="score">0</h1>
+	</div>
+	<div>
+		<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10</h1>
+	</div>
+	<div class="flex firstline">
+		<div class="bukvi"><h1>A</h1></div>
+		<div class="line1 miss allbox"></div>
+		<div class="line1 miss allbox"></div>
+		<div class="line1 miss allbox"></div>
+		<div class="line1 miss allbox"></div>
+		<div class="line1 miss allbox"></div>
+		<div class="line1 miss allbox"></div>
+		<div class="line1 miss allbox"></div>
+		<div class="line1 miss allbox"></div>
+		<div class="line1 one allbox"></div>
+		<div class="line1 miss allbox"></div>
+	</div>
+	<div class="flex secondline">
+		<div class="bukvi"><h1>Б</h1></div>
+		<div class="line2 miss allbox"></div>
+		<div class="line2 four allbox"></div>
+		<div class="line2 four allbox"></div>
+		<div class="line2 four allbox"></div>
+		<div class="line2 four allbox"></div>
+		<div class="line2 miss allbox"></div>
+		<div class="line2 miss allbox"></div>
+		<div class="line2 miss allbox"></div>
+		<div class="line2 miss allbox"></div>
+		<div class="line2 miss allbox"></div>
+	</div>
+	<div class="flex thirdline">
+		<div class="bukvi"><h1>В</h1></div>
+		<div class="line3 miss allbox"></div>
+		<div class="line3 miss allbox"></div>
+		<div class="line3 miss allbox"></div>
+		<div class="line3 miss allbox"></div>
+		<div class="line3 miss allbox"></div>
+		<div class="line3 miss allbox"></div>
+		<div class="line3 miss allbox"></div>
+		<div class="line3 three allbox"></div>
+		<div class="line3 miss allbox"></div>
+		<div class="line3 miss allbox"></div>
+	</div>
+	<div class="flex fourthline">
+		<div class="bukvi"><h1>Г</h1></div>
+		<div class="line4 miss allbox"></div>
+		<div class="line4 two allbox"></div>
+		<div class="line4 miss allbox"></div>
+		<div class="line4 two allbox"></div>
+		<div class="line4 miss allbox"></div>
+		<div class="line4 miss allbox"></div>
+		<div class="line4 miss allbox"></div>
+		<div class="line4 three allbox"></div>
+		<div class="line4 miss allbox"></div>
+		<div class="line4 miss allbox"></div>
+	</div>
+	<div class="flex fifthline">
+		<div class="bukvi"><h1>Д</h1></div>
+		<div class="line5 miss allbox"></div>
+		<div class="line5 two allbox"></div>
+		<div class="line5 miss allbox"></div>
+		<div class="line5 two allbox"></div>
+		<div class="line5 miss allbox"></div>
+		<div class="line5 miss allbox"></div>
+		<div class="line5 miss allbox"></div>
+		<div class="line5 three allbox"></div>
+		<div class="line5 miss allbox"></div>
+		<div class="line5 one allbox"></div>
+	</div>
+	<div class="flex sixthline">
+		<div class="bukvi"><h1>Е</h1></div>
+		<div class="line6 miss allbox"></div>
+		<div class="line6 miss allbox"></div>
+		<div class="line6 miss allbox"></div>
+		<div class="line6 miss allbox"></div>
+		<div class="line6 miss allbox"></div>
+		<div class="line6 one allbox"></div>
+		<div class="line6 miss allbox"></div>
+		<div class="line6 miss allbox"></div>
+		<div class="line6 miss allbox"></div>
+		<div class="line6 miss allbox"></div>
+	</div>
+	<div class="flex seventhline">
+		<div class="bukvi"><h1>Ё</h1></div>
+		<div class="line7 miss allbox"></div>
+		<div class="line7 miss allbox"></div>
+		<div class="line7 miss allbox"></div>
+		<div class="line7 miss allbox"></div>
+		<div class="line7 miss allbox"></div>
+		<div class="line7 miss allbox"></div>
+		<div class="line7 miss allbox"></div>
+		<div class="line7 miss allbox"></div>
+		<div class="line7 three allbox"></div>
+		<div class="line7 miss allbox"></div>
+	</div>
+	<div class="flex eighthline">
+		<div class="bukvi"><h1>Ж</h1></div>
+		<div class="line8 miss allbox"></div>
+		<div class="line8 two allbox"></div>
+		<div class="line8 miss allbox"></div>
+		<div class="line8 one allbox"></div>
+		<div class="line8 miss allbox"></div>
+		<div class="line8 miss allbox"></div>
+		<div class="line8 miss allbox"></div>
+		<div class="line8 miss allbox"></div>
+		<div class="line8 three allbox"></div>
+		<div class="line8 miss allbox"></div>
+	</div>
+	<div class="flex ninethline">
+		<div class="bukvi"><h1>З</h1></div>
+		<div class="line9 miss allbox"></div>
+		<div class="line9 two allbox"></div>
+		<div class="line9 miss allbox"></div>
+		<div class="line9 miss allbox"></div>
+		<div class="line9 miss allbox"></div>
+		<div class="line9 miss allbox"></div>
+		<div class="line9 miss allbox"></div>
+		<div class="line9 miss allbox"></div>
+		<div class="line9 three allbox"></div>
+		<div class="line9 miss allbox"></div>
+	</div>
+	<div class="flex tenthline">
+		<div class="bukvi"><h1>И</h1></div>
+		<div class="line10 miss allbox"></div>
+		<div class="line10 miss allbox"></div>
+		<div class="line10 miss allbox"></div>
+		<div class="line10 miss allbox"></div>
+		<div class="line10 miss allbox"></div>
+		<div class="line10 miss allbox"></div>
+		<div class="line10 miss allbox"></div>
+		<div class="line10 miss allbox"></div>
+		<div class="line10 miss allbox"></div>
+		<div class="line10 miss allbox"></div>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	let score = 0;
+	let fourc = document.querySelectorAll(".four");
+	let twoc = document.querySelectorAll(".two");
+	let threec = document.querySelectorAll(".three");
+	let onec = document.querySelectorAll(".one");
+	let missc = document.querySelectorAll(".miss");
+
+	for(let i=0;i<80;i=i+1){
+		missc[i].onclick = function(){
+			alert("мимо");
+		}
+	}
+	for(let i=0;i<80;i=i+1){
+		fourc[i].onclick = function(){
+			alert("Есть пробитие");
+			score = score + 1;
+			document.querySelector('.score').innerHTML = score;
+		}
+	}
+	for(let i=0;i<80;i=i+1){
+		threec[i].onclick = function(){
+			alert("Есть пробитие");
+			score = score + 1;
+			document.querySelector('.score').innerHTML = score;
+		}
+	}
+	for(let i=0;i<80;i=i+1){
+		twoc[i].onclick = function(){
+			alert("Есть пробитие");
+			score = score + 1;
+			document.querySelector('.score').innerHTML = score;
+		}
+	}
+	for(let i=0;i<80;i=i+1){
+		onec[i].onclick = function(){
+			alert("Есть пробитие");
+			score = score + 1;
+			document.querySelector('.score').innerHTML = score;
+		}
+	}
+</script>
+</html>
