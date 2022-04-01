@@ -25,87 +25,37 @@
 	</title>
 </head>
 <style type="text/css">
-	.line1{
-		border:2px solid black;
-		height:100px;
-		width:100px;
-		background-color:red;
+	.all{
 	}
-	.line2{
+	.allbox{
 		border:2px solid black;
 		height:100px;
 		width:100px;
-		background-color:red;
-	}
-	.line3{
-		border:2px solid black;
-		height:100px;
-		width:100px;
-		background-color:red;
-	}
-	.line4{
-		border:2px solid black;
-		height:100px;
-		width:100px;
-		background-color:red;
-	}
-	.line4{
-		border:2px solid black;
-		height:100px;
-		width:100px;
-		background-color:red;
-	}
-	.line5{
-		border:2px solid black;
-		height:100px;
-		width:100px;
-		background-color:red;
-	}
-	.line6{
-		border:2px solid black;
-		height:100px;
-		width:100px;
-		background-color:red;
-	}
-	.line7{
-		border:2px solid black;
-		height:100px;
-		width:100px;
-		background-color:red;
-	}
-	.line8{
-		border:2px solid black;
-		height:100px;
-		width:100px;
-		background-color:red;
-	}
-	.line9{
-		border:2px solid black;
-		height:100px;
-		width:100px;
-		background-color:red;
-	}
-	.line10{
-		border:2px solid black;
-		height:100px;
-		width:100px;
-		background-color:red;
 	}
 	.miss{
-		background-image: url(missed.png);
-		background-size: 100% 100%;
+		background-image:url(square.png);
+		background-size:100% 100%;
+		background-repeat: no-repeat;
 	}
 	.four{
-		background-color:purple;
+		background-size:100% 100%;
+		background-repeat: no-repeat;
+		background-image:url(square.png);
 	}
 	.three{
-		background-color:orange;
+		background-size:100% 100%;
+		background-repeat: no-repeat;
+		background-image:url(square.png);
 	}
 	.two{
-		background-color:green;
+		background-size:100% 100%;
+		background-repeat: no-repeat;
+		background-image:url(square.png);
 	}
 	.one{
-		background-color:blue;
+		background-size:100% 100%;
+		background-repeat: no-repeat;
+		background-image:url(square.png);
 	}
 	.flex{
 		display: flex;
@@ -114,17 +64,89 @@
 		position: absolute;
 		color:white;
 	}
+	.mainpole{
+		margin-left:650px;
+	}
+	.stat1{
+		position: absolute;
+		top:300px;
+	}
+	.bukvaA{
+		position: absolute;
+		top:90px;
+		left:610px;
+	}
+	.bukvaB{
+		position: absolute;
+		top:190px;
+		left:610px;
+	}
+	.bukvaC{
+		position: absolute;
+		top:300px;
+		left:610px;
+	}
+	.bukvaD{
+		position: absolute;
+		top:400px;
+		left:610px;
+	}
+	.bukvaE{
+		position: absolute;
+		top:500px;
+		left:610px;
+	}
+	.bukvaF{
+		position: absolute;
+		top:610px;
+		left:610px;
+	}
+	.bukvaG{
+		position: absolute;
+		top:710px;
+		left:610px;
+	}
+	.bukvaH{
+		position: absolute;
+		top:820px;
+		left:610px;
+	}
+	.bukvaI{
+		position: absolute;
+		top:920px;
+		left:610px;
+	}
+	.bukvaJ{
+		position: absolute;
+		top:1020px;
+		left:610px;
+	}
 </style>
 <body class="all">
 <div>
-	<div>
+	<div class="stat1">
 	<h1>Ваше количество очков:</h1><h1 class="score">0</h1>
+	<h1>Какие корабли сбил(от 4 к 1):</h1>
+	<img src="four.png" height="100">
+	<img src="three.png" height="100">
+	<img src="da.png" height="100">
+	<img src="one.png" height="100">
 	</div>
+<div class="mainpole">
 	<div>
 		<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10</h1>
 	</div>
+	<div><h1 class="bukvaA">A</h1></div>
+	<div><h1 class="bukvaB">B</h1></div>
+	<div><h1 class="bukvaC">C</h1></div>
+	<div><h1 class="bukvaD">D</h1></div>
+	<div><h1 class="bukvaE">E</h1></div>
+	<div><h1 class="bukvaF">F</h1></div>
+	<div><h1 class="bukvaG">G</h1></div>
+	<div><h1 class="bukvaH">H</h1></div>
+	<div><h1 class="bukvaI">I</h1></div>
+	<div><h1 class="bukvaJ">J</h1></div>
 	<div class="flex firstline">
-		<div class="bukvi"><h1>A</h1></div>
 		<div class="line1 miss allbox"></div>
 		<div class="line1 miss allbox"></div>
 		<div class="line1 miss allbox"></div>
@@ -137,7 +159,6 @@
 		<div class="line1 miss allbox"></div>
 	</div>
 	<div class="flex secondline">
-		<div class="bukvi"><h1>Б</h1></div>
 		<div class="line2 miss allbox"></div>
 		<div class="line2 four allbox"></div>
 		<div class="line2 four allbox"></div>
@@ -150,7 +171,6 @@
 		<div class="line2 miss allbox"></div>
 	</div>
 	<div class="flex thirdline">
-		<div class="bukvi"><h1>В</h1></div>
 		<div class="line3 miss allbox"></div>
 		<div class="line3 miss allbox"></div>
 		<div class="line3 miss allbox"></div>
@@ -163,7 +183,6 @@
 		<div class="line3 miss allbox"></div>
 	</div>
 	<div class="flex fourthline">
-		<div class="bukvi"><h1>Г</h1></div>
 		<div class="line4 miss allbox"></div>
 		<div class="line4 two allbox"></div>
 		<div class="line4 miss allbox"></div>
@@ -176,7 +195,6 @@
 		<div class="line4 miss allbox"></div>
 	</div>
 	<div class="flex fifthline">
-		<div class="bukvi"><h1>Д</h1></div>
 		<div class="line5 miss allbox"></div>
 		<div class="line5 two allbox"></div>
 		<div class="line5 miss allbox"></div>
@@ -189,7 +207,6 @@
 		<div class="line5 one allbox"></div>
 	</div>
 	<div class="flex sixthline">
-		<div class="bukvi"><h1>Е</h1></div>
 		<div class="line6 miss allbox"></div>
 		<div class="line6 miss allbox"></div>
 		<div class="line6 miss allbox"></div>
@@ -202,7 +219,6 @@
 		<div class="line6 miss allbox"></div>
 	</div>
 	<div class="flex seventhline">
-		<div class="bukvi"><h1>Ё</h1></div>
 		<div class="line7 miss allbox"></div>
 		<div class="line7 miss allbox"></div>
 		<div class="line7 miss allbox"></div>
@@ -215,7 +231,6 @@
 		<div class="line7 miss allbox"></div>
 	</div>
 	<div class="flex eighthline">
-		<div class="bukvi"><h1>Ж</h1></div>
 		<div class="line8 miss allbox"></div>
 		<div class="line8 two allbox"></div>
 		<div class="line8 miss allbox"></div>
@@ -228,7 +243,6 @@
 		<div class="line8 miss allbox"></div>
 	</div>
 	<div class="flex ninethline">
-		<div class="bukvi"><h1>З</h1></div>
 		<div class="line9 miss allbox"></div>
 		<div class="line9 two allbox"></div>
 		<div class="line9 miss allbox"></div>
@@ -241,7 +255,6 @@
 		<div class="line9 miss allbox"></div>
 	</div>
 	<div class="flex tenthline">
-		<div class="bukvi"><h1>И</h1></div>
 		<div class="line10 miss allbox"></div>
 		<div class="line10 miss allbox"></div>
 		<div class="line10 miss allbox"></div>
@@ -257,43 +270,104 @@
 </body>
 <script type="text/javascript">
 	let score = 0;
+
+	let fourcount =0;
+	let threecount=0;
+	let twocount=0;
+	let onecount=0;
+
 	let fourc = document.querySelectorAll(".four");
 	let twoc = document.querySelectorAll(".two");
 	let threec = document.querySelectorAll(".three");
 	let onec = document.querySelectorAll(".one");
+
 	let missc = document.querySelectorAll(".miss");
 
 	for(let i=0;i<80;i=i+1){
 		missc[i].onclick = function(){
+			missc[i].style.backgroundImage = "url(missed.png)";
 			alert("мимо");
 		}
 	}
-	for(let i=0;i<80;i=i+1){
+	for(let i=0;i<4;i=i+1){
 		fourc[i].onclick = function(){
 			alert("Есть пробитие");
 			score = score + 1;
+			fourcount = fourcount + 1;
 			document.querySelector('.score').innerHTML = score;
+			fourc[i].style.backgroundImage = "url(four.png)";
+			if(fourcount==4){
+				alert("Сбит 4-ый по уровню корабль")
+			}
+			if(score==20){
+				alert("Ты побеждитель")
+				document.querySelector('.all').style.display= 'none';
+			}
 		}
 	}
-	for(let i=0;i<80;i=i+1){
+	for(let i=0;i<6;i=i+1){
 		threec[i].onclick = function(){
 			alert("Есть пробитие");
 			score = score + 1;
+			threecount=threecount+1;
 			document.querySelector('.score').innerHTML = score;
+			threec[i].style.backgroundImage = "url(three.png)";
+			if(threecount==3){
+				alert("Сбит 3-ий по уровню корабль")
+			}
+			if(threecount==6){
+				alert("Сбит 3-ий по уровню корабль")
+			}
+			if(score==20){
+				alert("Ты побеждитель")
+				document.querySelector('.all').style.display= 'none';
+			}
 		}
 	}
-	for(let i=0;i<80;i=i+1){
+
+	for(let i=0;i<6;i=i+1){
 		twoc[i].onclick = function(){
 			alert("Есть пробитие");
 			score = score + 1;
+			twocount = twocount+1;
 			document.querySelector('.score').innerHTML = score;
+			twoc[i].style.backgroundImage = "url(da.jpg)";
+			if(twocount==2){
+				alert("Сбит 2-ой по уровню корабль")
+			}
+			if(twocount==4){
+				alert("Сбит 2-ой по уровню корабль")
+			}
+			if(score==20){
+				alert("Ты побеждитель")
+				document.querySelector('.all').style.display= 'none';
+			}
 		}
 	}
-	for(let i=0;i<80;i=i+1){
+
+	for(let i=0;i<4;i=i+1){
 		onec[i].onclick = function(){
 			alert("Есть пробитие");
 			score = score + 1;
+			onecount=onecount+1;
 			document.querySelector('.score').innerHTML = score;
+			onec[i].style.backgroundImage = "url(one.png)";
+			if(onecount==1){
+				alert("Сбит 1-ый по уровню корабль")
+			}
+			if(onecount==2){
+				alert("Сбит 1-ый по уровню корабль")
+			}
+			if(onecount==3){
+				alert("Сбит 1-ый по уровню корабль")
+			}
+			if(onecount==4){
+				alert("Сбит 1-ый по уровню корабль")
+			}
+			if(score==20){
+				alert("Ты побеждитель")
+				document.querySelector('.all').style.display= 'none';
+			}
 		}
 	}
 </script>
